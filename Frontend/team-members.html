@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Member Management</title>
+    <link rel="stylesheet" href="team-members.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Team Member Management</h1>
+        <div class="tabs">
+            <button id="myTeamBtn">My Team</button>
+            <button id="addMembersBtn">Add Members</button>
+        </div>
+    </nav>
+
+    <div id="myTeamSection" class="section">
+        <h2>My Team Members</h2>
+        <ul id="myTeamList" class="member-list"></ul>
+    </div>
+
+    <div id="addMembersSection" class="section hidden">
+        <h2>Available Members</h2>
+        <ul id="availableMembersList" class="member-list"></ul>
+    </div>
+
+    <script src="team-members.js"></script>
+</body>
+</html>

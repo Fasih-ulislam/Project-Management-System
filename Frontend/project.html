@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Project Management</h1>
+    </div>
+
+    <nav class="nav-bar">
+      <button class="nav-button" data-target="project-list-section">Get Projects</button>
+      <button class="nav-button" data-target="create-form-section">Create</button>
+      <button class="nav-button" data-target="update-form-section">Update</button>
+      <button class="nav-button" data-target="delete-form-section">Delete</button>
+    </nav>
+
+    <!-- Projects List -->
+    <div class="form-section" id="project-list-section">
+      <h2>All Projects</h2>
+      <div id="project-list"></div>
+    </div>
+
+    <!-- Create Project -->
+    <div class="form-section" id="create-form-section" style="display: none;">
+      <h2>Create Project</h2>
+      <form id="create-project-form">
+        <input type="number" name="managerId" placeholder="Manager ID" required />
+        <input type="text" name="name" placeholder="Project Name" required />
+        <textarea name="description" placeholder="Project Description"></textarea>
+        <input type="date" name="startDate" required />
+        <input type="date" name="endDate" required />
+        <input type="number" step="0.01" name="budget" placeholder="Budget" required />
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <!-- Update Project -->
+    <div class="form-section" id="update-form-section" style="display: none;">
+      <h2>Update Project</h2>
+      <form id="update-project-form">
+        <input type="text" id="update-project-id" name="id" placeholder="Project ID" required readonly />
+        <input type="number" name="managerId" placeholder="Manager ID" required/>
+        <input type="text" name="name" placeholder="New Name" required/>
+        <textarea name="description" placeholder="New Description" required></textarea>
+        <input type="date" name="startDate" required/>
+        <input type="date" name="endDate" required/>
+        <input type="number" step="0.01" name="budget" placeholder="New Budget" required/>
+        <button type="submit">Update</button>
+      </form>
+    </div>
+
+    <!-- Delete Project -->
+    <div class="form-section" id="delete-form-section" style="display: none;">
+      <h2>Delete Project</h2>
+      <form id="delete-project-form">
+        <input type="text" id="delete-project-id" name="id" placeholder="Project ID" required readonly />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>

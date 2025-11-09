@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdfa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #14b8a6;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .tabs button {
+    background-color: white;
+    color: #14b8a6;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar .tabs button:hover {
+    background-color: #ccfbf1;
+}
+
+.section {
+    padding: 1rem 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.member-list {
+    list-style: none;
+    padding: 0;
+}
+
+.member-list li {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #14b8a6;
+}
+
+button.action-btn {
+    background-color: #14b8a6;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.action-btn:hover {
+    background-color: #0d9488;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.member-list li {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #14b8a6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.member-info span {
+    font-size: 0.95rem;
+    color: #334155;
+}
+

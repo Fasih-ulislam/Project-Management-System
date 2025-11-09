@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Shack Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">Soft Shack</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="members.html">Member</a></li>
+        <li><a href="#" id="logoutLink">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="roles">
+        <h2>Quick Access</h2>
+        <div class="cards-row">
+          <div class="role-card" onclick="navigate('admin')">
+            <h3>Admin</h3>
+            <p>Manage users, projects, and system-wide settings.</p>
+          </div>
+          <div class="role-card" onclick="navigate('manager')">
+            <h3>Project Manager</h3>
+            <p>Track tasks, assign teams, manage deadlines.</p>
+          </div>
+          <div class="role-card" onclick="navigate('member')">
+            <h3>Team Member</h3>
+            <p>Log hours, update task status, collaborate.</p>
+          </div>
+        </div>
+      </section>
+
+
+    
+  </main>
+
+  <script src="dashboard.js"></script>
+  <script src="logout.js"></script>
+</body>
+</html>

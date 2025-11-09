@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Details</title>
+  <link rel="stylesheet" href="expenses.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Expense Details</h1>
+    </div>
+
+    <nav class="nav-bar">
+      <button class="nav-button" data-target="info-form">Get Expenses</button>
+      <button class="nav-button" data-target="create-form">Create</button>
+      <button class="nav-button" data-target="update-form">Update</button>
+      <button class="nav-button" data-target="delete-form">Delete</button>
+    </nav>
+
+    <div class="form-section" id="info-form">
+      <h2>Expenses for Task</h2>
+      <div id="expense-list"></div>
+    </div>
+
+    <div class="form-section" id="create-form" style="display: none;">
+      <h2>Create Expense</h2>
+      <form id="expense-create-form">
+        <input type="text" name="description" placeholder="Description" required />
+        <input type="number" name="amount" placeholder="Amount" min="0" required />
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <div class="form-section" id="update-form" style="display: none;">
+      <h2>Update Expense</h2>
+      <form id="expense-update-form">
+        <input type="text" id="update-expense-id" name="id" placeholder="Expense ID" readonly required />
+        <input type="text" name="description" placeholder="New Description" />
+        <input type="number" name="amount" placeholder="New Amount" min="0" />
+        <button type="submit">Update</button>
+      </form>
+    </div>
+
+    <div class="form-section" id="delete-form" style="display: none;">
+      <h2>Delete Expense</h2>
+      <form id="expense-delete-form">
+        <input type="text" id="delete-expense-id" name="id" placeholder="Expense ID" readonly required />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="expenses.js"></script>
+</body>
+</html>

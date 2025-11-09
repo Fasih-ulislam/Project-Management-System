@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="members.css" />
+  <title>Members Page</title>
+</head>
+<body>
+    <header>
+      <h1 class="logo">Soft Shack</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="members.html" class="active">Member</a></li>
+          <li><a href="#" id="logoutLink">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <!-- Navigation Menu -->
+  <div class="container">
+    <nav class="nav-bar">
+      <button class="nav-button" data-target="register-form">Register</button>
+      <button class="nav-button" data-target="info-form">Get Info</button>
+      <button class="nav-button" data-target="update-form">Update</button>
+      <button class="nav-button" data-target="delete-form">Delete</button>
+    </nav>
+
+    <div class="form-section">
+      <form id="register-form">
+        <h2>Register as a Member</h2>
+        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Position" required />
+        <input type="number" min = 0 placeholder="salary" required />
+        <button type="submit">Register</button>
+      </form>
+
+      <form id="delete-form">
+        <h2>Delete Member</h2>
+        <button type="submit">Delete My Account</button>
+      </form>
+
+      <form id="update-form">
+        <h2>Update Member Information</h2>
+        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Position" required />
+        <input type="number" min = 0 placeholder="salary" required />
+        <button type="submit">Update Information</button>
+      </form>
+
+      <form id="info-form">
+        <h2>Get My Info</h2>
+        <button type="submit">Get Info</button>
+      </form>
+      <div id="member-info-box" class="info-box" style="display: none;"></div>
+    </div>
+  </div>
+  <script src="members.js"></script>
+  <script src="logout.js"></script>
+</body>
+</html>

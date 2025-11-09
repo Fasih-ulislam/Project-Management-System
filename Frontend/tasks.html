@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Tasks</title>
+  <link rel="stylesheet" href="tasks.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Project Tasks</h1>
+    </div>
+
+    <nav class="nav-bar">
+      <button class="nav-button" data-target="info-form">Get Tasks</button>
+      <button class="nav-button" data-target="task-register-form">Create</button>
+      <button class="nav-button" data-target="update-form">Update</button>
+      <button class="nav-button" data-target="delete-form">Delete</button>
+    </nav>
+
+    <!-- Get Tasks Section -->
+    <div class="form-section" id="info-form">
+      <h2>Tasks of Project</h2>
+      <div id="task-list"></div>
+    </div>
+
+    <!-- Create Task Section -->
+    <div class="form-section" id="task-register-form" style="display: none;">
+      <h2>Create Task</h2>
+      <form id="task-register-form">
+        <input type="text" name="title" placeholder="Title" required />
+        <textarea name="description" placeholder="Description" required></textarea>
+        <input type="date" name="startDate" placeholder="Start Date" required />
+        <input type="date" name="endDate" placeholder="End Date" required />
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <!-- Update Task Section (future use, form not yet wired) -->
+    <div class="form-section" id="update-form" style="display: none;">
+      <h2>Update Task</h2>
+      <form id="task-update-form">
+        <input type="text" id="update-task-id" name="id" placeholder="Task ID" required readonly />
+        <input type="text" name="title" placeholder="New Title" />
+        <textarea name="description" placeholder="New Description"></textarea>
+        <input type="date" name="startDate" placeholder="New Start Date" />
+        <input type="date" name="endDate" placeholder="New End Date" />
+        <button type="submit">Update</button>
+      </form>
+    </div>
+
+    <!-- Delete Task Section -->
+    <div class="form-section" id="delete-form" style="display: none;">
+      <h2>Delete Task</h2>
+      <form id="task-delete-form">
+        <input type="text" id="delete-task-id" name="id" placeholder="Task ID" required readonly />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fc;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    color: #111;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  nav a.active {
+    color: teal;
+    border-bottom: 2px solid teal;
+  }
+  
+  .user-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .card button {
+    margin-top: 1rem;
+    border: 1px solid teal;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: teal;
+    cursor: pointer;
+  }
+  
+  .deadlines .cards-row,
+  .roles .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .deadline-card, .role-card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+  }
+  
+  .deadline-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .deadline-card p, .role-card p {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .role-card h3 {
+    margin: 1rem 1rem 0 1rem;
+  }
+  
